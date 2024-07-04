@@ -1,0 +1,85 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e0e0e0;
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  width: 100px;
+}
+
+.info {
+  text-align: right;
+}
+
+.info span {
+  display: block;
+  color: #1b1b1b;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.clubs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: transform 0.3s;
+}
+
+.clubs :hover{
+  transform: scale(1.02);
+}
+
+.club-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 4px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.club-card img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.club-info h2 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.club-info p {
+  margin: 0;
+  color: #666;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .club-card {
+      width: 100%;
+  }
+}
